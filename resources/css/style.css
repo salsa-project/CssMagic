@@ -1,0 +1,193 @@
+
+/****************** Import Fonts *******************/
+@import url('https://fonts.googleapis.com/css?family=Tajawal&display=swap');
+/****************** Basic Setup ********************/
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: 'Tajawal', serif,sans-serif;
+  list-style: none;
+}
+/****************** Body ********************/
+body{
+  background-image: linear-gradient(to bottom right , #1B1628, #226b80);
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+}
+/****************** Header ********************/
+header h1{
+  color: orange;
+  margin: 30px 0px 10px;
+}
+header h1, header p{
+  text-align: center;
+}
+header p{
+  color: white;
+  margin-bottom: 100px;
+  padding: 0px 5%;
+}
+/******************** alert-container *********************/
+#alert-container{
+  display: none;
+  position: fixed;
+  bottom: 90vh;
+  height: 0px;
+  width: 100vw;
+  z-index: 99;
+}
+#alert{
+  position: relative;
+  top: 20px;
+  right: 10px;
+  Height: 460px;
+  width: 300px;
+  margin: 0 auto;
+  border-radius: 5px;
+  background-color: #1D1F31;
+}
+#alert-header{
+  width: 100%;
+}
+#alert-close{
+  float: right;
+  padding: 10px;
+  background-color: red;
+  border-radius: 50%;
+  margin: 5px;
+}
+#alert-content{
+  position: relative;
+  clear: both;
+}
+#alert-content h2:first-child{
+  color: #2848ba;
+  margin: 10px;
+}
+.alert-content-copy{
+  position: absolute;
+  top: 24px;
+  right: 20px;
+  font-weight: bolder;
+  padding: 2px 8px;
+  border-radius: 50%;
+  border: 2px white solid;
+  color: white;
+  background-color: #1D1F31;
+}
+#alert-content-css-copy{
+  top: 234px;
+}
+#alert-content p+h2{
+  color: #b76628;
+  margin: 10px;
+}
+#alert-content p{
+  text-align: left;
+  color: white;
+  background-color: #453f6d;
+  width: 95%;
+  padding: 5px 10px;
+  margin: 0 auto;
+  height: 160px;
+  overflow-y: auto;
+}
+/******************* section ********************/
+section{
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items:center;
+  height: 180px;
+  background-color: rgba(0,0,0,0.15);
+  padding: 20px;
+  margin: 10px;
+  border: 1px white dashed;
+}
+.card-copy{
+  color: orangered;
+  font-size: 12pt;
+  border: 1px white dashed;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  padding: 5px 10px;
+  box-shadow: 0px 0px 5px lightgray;
+}
+.card p:hover{
+  color: white;
+  box-shadow: 0px 0px 15px orange;
+}
+/******************* btn1 ********************/
+#btn1{
+  padding: 20px;
+  border-radius: 50%;
+  border: 2px rgba(0,0,0,0.5) solid;
+  border-top: 4px yellow solid;
+  animation: ani1 2s infinite ease;
+}
+@keyframes ani1{
+  from{transform: rotate(0deg);}
+  to{transform: rotate(359deg);}
+}
+/******************* btn2 ********************/
+#btn2{
+  padding: 5px;
+  border-radius: 50%;
+  border: 2px rgba(0,0,0,0) solid;
+  border-top: 3px white solid;
+  animation: ani2 2s infinite linear;
+}
+@keyframes ani2{
+  from{transform: rotate(359deg);}
+  to{transform: rotate(2deg);}
+}
+/******************* btn3 ********************/
+#btn3{
+  padding: 20px;
+  border-radius: 50%;
+  border: 2px rgba(0,0,0,0.2) solid;
+  border-top: 3px purple solid;
+  animation: ani3 2s infinite linear;
+}
+@keyframes ani3{
+  0%{transform: rotate(0deg);}
+  50%{transform: rotate(359deg);}
+  100%{transform: rotate(0deg);}
+}
+/******************* btn4 ********************/
+#btn4{
+  padding: 20px;
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 50%;
+  border: 2px white dashed;
+  animation: ani4 1s infinite ease;
+}
+@keyframes ani4{
+  0%{transform: scale(0.8);}
+  40%{transform: scale(0.6);}
+  70%{transform: scale(0.2);}
+  100%{transform: scale(1);}
+}
+/******************* btn5 ********************/
+#btn5{
+  color: red;
+  font-size: 30pt;
+  animation: ani5 1s infinite linear;
+}
+@keyframes ani5{
+  0%{transform: scale(1.5);}
+  40%{transform: scale(1.1);}
+  50%{transform: scale(1.3);}
+  60%{transform: scale(1.1);}
+  70%{transform: scale(1.3);}
+  100%{transform: scale(1.5);}
+}
+/******************* btn6 ********************/
+/******************* btn7 ********************/
+/******************* btn8 ********************/
